@@ -239,6 +239,8 @@ WeatherProvider.register("openmeteo", {
 			precipitation_unit: "mm"
 		};
 
+		console.log("PRINTING!")
+
 		const startDate = moment().startOf("day");
 		const endDate = moment(startDate)
 			.add(Math.max(0, Math.min(7, this.config.maxNumberOfDays)), "days")
